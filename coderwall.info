@@ -1,0 +1,3 @@
+name = Coderwall
+description = Enables embedding of Coderwall achievements in a block
+core = 7.x
