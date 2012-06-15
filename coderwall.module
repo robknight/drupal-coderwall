@@ -77,8 +77,8 @@ function coderwall_block_view($delta = '') {
     $block['subject'] = t('Coderwall achievements');
     $block['content'] = array(
       '#theme' => 'coderwall_achievements',
-      '#username' => variable_get('coderwall_username'),
-      '#orientation' => variable_get('coderwall_orientation'),
+      '#username' => check_plain(variable_get('coderwall_username')),
+      '#orientation' => check_plain(variable_get('coderwall_orientation')),
       '#attached' => array(
         'js' => array('http://coderwall.com/javascripts/jquery.coderwall.js' => array(
                 'type' => 'external')),
